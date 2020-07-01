@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Product catalog</title>
+    <style>
+        .products {
+            width: 1200px;
+           margin: auto;
+           display: flex;
+           flex-wrap: wrap;
+        }
+        .products article {
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding: 1em;
+            width: 33.33%;
+
+            display: flex;  /*activate flex inside */
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .products a{
+            align-self: flex-end;
+        }
+        .products .important{
+            background-color: #DEF;
+        }
+        .products img{
+            width: 100%;
+        }
+        @media (max-width: 1240px) and (min-width: 942px){
+            .products{
+                width: 900px;
+            }
+            .products article{
+                width: 50%;
+        }
+        .products .important{
+            order: -1;
+        }
+        }
+        @media (max-width: 940px){
+            .products{
+                width: 90%;
+            }
+            .products article{
+                width: 100%;
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="products">
+        <article>
+            <h2>Lorem, ipsum dolor.</h2>
+            <img src="https://randomwordgenerator.com/img/picture-generator/54e3d1444e51ab14f1dc8460962e33791c3ad6e04e507441722872d59045cc_640.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum similique voluptatum error amet
+                dolor mollitia perferendis suscipit dicta totam.</p>
+            <a href="">Add To Cart</a>
+        </article>
+        <article class="important">
+            <h2>Eaque, perferendis pariatur?</h2>
+            <img src="https://randomwordgenerator.com/img/picture-generator/52e9dd444d56ac14f1dc8460962e33791c3ad6e04e5074417c2f73d49f4dc4_640.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum similique voluptatum error amet
+                dolor mollitia perferendis suscipit dicta totam.</p>
+            <a href="">Add To Cart</a>
+        </article>
+        <article>
+            <h2>Tenetur, vero. Eaque?</h2>
+            <img src="https://randomwordgenerator.com/img/picture-generator/54e5d6454c54ae14f1dc8460962e33791c3ad6e04e50744077297bd69148c4_640.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum similique voluptatum error amet
+                dolor mollitia perferendis suscipit dicta totam.</p>
+            <a href="">Add To Cart</a>
+        </article>
+        <article>
+            <h2>Maxime, et dolores.</h2>
+            <img src="https://randomwordgenerator.com/img/picture-generator/57e0d5414c51b10ff3d8992cc12c30771037dbf852547941742a79d6914f_640.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum similique voluptatum error amet
+                dolor mollitia perferendis suscipit dicta totam.</p>
+            <a href="">Add To Cart</a>
+        </article>
+        <article>
+            <h2>Voluptas, cupiditate quasi.</h2>
+            <img src="https://randomwordgenerator.com/img/picture-generator/5fe8d0424f5ab10ff3d8992cc12c30771037dbf85254794e732873d1924d_640.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum similique voluptatum error amet
+                dolor mollitia perferendis suscipit dicta totam.</p>
+            <a href="">Add To Cart</a>
+        </article>
+        <article>
+            <h2>Modi, nostrum consectetur!</h2>
+            <img src="https://randomwordgenerator.com/img/picture-generator/54e5d3434e54b10ff3d8992cc12c30771037dbf85254784b732f7ad6944e_640.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum similique voluptatum error amet
+                dolor mollitia perferendis suscipit dicta totam.</p>
+            <a href="">Add To Cart</a>
+        </article>
+    </section>
+</body>
+
+</html>
